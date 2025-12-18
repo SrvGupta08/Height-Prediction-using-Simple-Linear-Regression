@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <form action="{{ url_for('predict_height') }}" method="post">
+            <input type="text" name="weight" placeholder="weight" required="required"></br>
+            <button type="submit">Predict</button>
+        </form>
+
+        <h2>
+            Your height is: {{ result }} cm!
+        </h2>
+    </body>
+</html>
